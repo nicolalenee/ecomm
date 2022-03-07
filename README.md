@@ -25,4 +25,4 @@ For a more detailed walkthrough of the application's functionality, see the vide
 [![Demonstration Video](https://user-images.githubusercontent.com/86696492/156980551-7ba9246b-4c5d-42ee-b7f0-a7441c292488.png)](https://bootcampspot.instructuremedia.com/embed/b1d3ed99-d45e-4d8b-b702-58ba183b90b1 "Walkthrough Video")
 
 ## Questions
-[Repository💗] (http://gtihub.com/https://github.com/nicolalenee/ecomm)
+[Repository💗] (https://github.com/nicolalenee/ecomm)
