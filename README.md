@@ -18,8 +18,8 @@ This steps to invoke the application are:
 3. Sync the Sequelize models to the database and start the server with the `npm start` command.
 
 ## Demonstration
-The database information will be return to the user in JSON format. Below is an example of the information that would be returned for a GET request of all the categories (and the products that are associated with said category) in the database. 
-<img width="616" alt="image" src="<img width="1550" alt="image" src="https://user-images.githubusercontent.com/86696492/156983667-3b34ce73-458e-41d3-a7e4-1ff953fae1f7.png">">
+The database information will be returned to the user in JSON format. Below is an example of the response from a GET request of all the categories (and the products that are associated with said categories) in the database. 
+<img width="1550" alt="image" src="https://user-images.githubusercontent.com/86696492/156983667-3b34ce73-458e-41d3-a7e4-1ff953fae1f7.png">
 
 For a more detailed walkthrough of the application's functionality, see the video below.
 [![Demonstration Video](https://user-images.githubusercontent.com/86696492/156980551-7ba9246b-4c5d-42ee-b7f0-a7441c292488.png)](https://bootcampspot.instructuremedia.com/embed/b1d3ed99-d45e-4d8b-b702-58ba183b90b1 "Walkthrough Video")
