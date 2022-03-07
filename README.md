@@ -1,9 +1,7 @@
 # E-commerce Back-End
 
 ## Description
-This application provides the back-end functionality to an ecommerce site. Online shopping is the norm these days and internet retailers want to ensure that they can provide a competitive online service for their customers. 
-
-This application follows the MVC paradigm in code organization, to increase code readability and mantainance for future developers. Database tables are created through Sequelize models. 
+This application provides the back-end functionality to an ecommerce site. Online shopping is the norm these days and internet retailers want to ensure that they can provide a competitive online service for their customers. Database tables are created and joined with help of Sequelize. 
 
 Upon starting the server, users will be able to GET, POST, UPDATE, and DELETE categories, products, and descriptive tags through API routes. The API routes can be accessed using a third-party application, such as Insomnia or Postman.
 
