@@ -8,11 +8,16 @@ router.get('/', (req, res) => {
   // find all products including its associated Category and Tag data
   console.log('=======================');
   Product.findAll({
-    attributes: ['id', 'product_name', 'price', 'stock'],
     include: [
       {
         model: Category,
         attributes: ['id', 'category_name']
+      },
+      {
+        model: Tag,
+        attributes: ['id','tag_name'],
+        through: ProductTag,
+        as: 'tags'
       }
     ]
   })
@@ -25,22 +30,28 @@ router.get('/', (req, res) => {
 
 // get one product
 router.get('/:id', (req, res) => {
+  console.log('=======================');
   // find a single product by its `id` including its associated Category and Tag data
   Product.findOne({
     where: {
       id: req.params.id
     },
-    attributes: ['id', 'product_name', 'price', 'stock'],
     include: [
       {
         model: Category,
         attributes: ['category_name']
+      },
+      {
+        model: Tag,
+        attributes: ['tag_name'],
+        through: ProductTag,
+        as: 'tags'
       }
     ]
   })
     .then(dbProductsData => {
       if (!dbProductsData) {
-        res.status(404).json({ message: 'No post found with this id'})
+        res.status(404).json({ message: 'No product found with this id'})
         return;
       }
       res.json(dbProductsData);
@@ -53,6 +64,7 @@ router.get('/:id', (req, res) => {
 
 // create new product
 router.post('/', (req, res) => {
+  console.log('=======================');
   /* req.body expects ->
     {
       product_name: "Basketball",
@@ -85,6 +97,7 @@ router.post('/', (req, res) => {
 
 // update product
 router.put('/:id', (req, res) => {
+  console.log('=======================');
   // update product data
   Product.update(req.body, {
     where: {
@@ -126,6 +139,7 @@ router.put('/:id', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
+  console.log('=======================');
   // delete one product by its `id` value
   Product.destroy({
     where: {
